@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.agent/
+.git/
+.DS_Store
+data/saved_routes.json

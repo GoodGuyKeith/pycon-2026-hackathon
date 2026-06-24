@@ -1,0 +1,93 @@
+{
+  "projectTitle": "Event Buddy",
+  "oneLiner": "A live event companion game that imports agenda text, recommends a personalized route, verifies session attendance, counts attendee connections by code, and turns proof into AI-credit reward claim requests.",
+  "hackathon": {
+    "event": "PyCon Singapore 2026 Hackathon",
+    "primaryTrack": "Open Track",
+    "sourceUrl": "https://pycon.sg/hackathon.html",
+    "scheduleSourceUrl": "https://pycon.sg/schedule.html"
+  },
+  "targetUsers": [
+    "First-time conference attendees",
+    "Introverted developers",
+    "AI/data/backend practitioners choosing between parallel talks",
+    "Hackathon participants trying to preserve energy",
+    "Event organizers who want a lightweight engagement layer"
+  ],
+  "criteriaEvidence": {
+    "userFocus": [
+      "event URL and pasted agenda import controls",
+      "CSV, .ics calendar, and manual session import paths",
+      "goal, energy, social mode, venue preference, and break controls",
+      "presets for beginners, AI builders, backend engineers, and hallway-track users",
+      "code-based attendance and networking verification",
+      "AI-credit-style reward claim requests based on mixed proof"
+    ],
+    "experienceValue": [
+      "personalized timeline",
+      "XP and quest progress",
+      "Reward Wallet with AI-credit-style claim tickets",
+      "session QR / room-code verification",
+      "buddy-code connection counting",
+      "conflict count",
+      "protected break count",
+      "venue rhythm map",
+      "copy and save plan"
+    ],
+    "technicalExecution": [
+      "React frontend",
+      "Tailwind CSS design system",
+      "Vite build workflow",
+      "GSAP pointer-follow and progress microinteractions",
+      "Python stdlib static server",
+      "client-side pasted agenda parser",
+      "client-side CSV and calendar parsers",
+      "Python stdlib best-effort website import endpoint",
+      "browser localStorage persistence",
+      "smoke test",
+      "Makefile workflow"
+    ]
+  },
+  "runCommands": {
+    "run": "make run",
+    "smoke": "make smoke",
+    "check": "make check",
+    "pagesPreviewCheck": "make pages-preview-check",
+    "repoPreflight": "make repo-preflight",
+    "selftestPackage": "make selftest-package",
+    "finalPreflight": "make final-preflight"
+  },
+  "submissionFiles": [
+    "dist/event-buddy-submission.zip",
+    "JUDGE_PACKET.md",
+    ".github/workflows/check.yml",
+    ".github/workflows/pages.yml",
+    "assets/demo-screenshot.jpg",
+    "assets/event-buddy-demo-current.png",
+    "assets/event-buddy-demo.mp4",
+    "SUBMISSION_AUDIT_REPORT.md",
+    "FORM_INSPECTION.md",
+    "PUBLIC_REPO_CHECKLIST.md",
+    "GITHUB_PUBLISH_GUIDE.md",
+    "DEPLOYMENT.md",
+    "AI_USE_AND_ETHICS.md",
+    "AI_READY_ASEAN.md",
+    "SOURCES.md",
+    "tools/selftest_package.py",
+    "tools/final_preflight.py",
+    "tools/build_static_preview.py",
+    "tools/public_repo_preflight.py",
+    "tools/capture_demo_assets.mjs"
+  ],
+  "demoVideo": {
+    "path": "assets/event-buddy-demo.mp4",
+    "description": "Captioned walkthrough covering agenda import, planning, room-code verification, buddy-code connection, Reward Wallet AI-credit claim request, and venue guidance."
+  },
+  "knownLimitations": [
+    "The built-in sample schedule is curated from the public PyConSG schedule page rather than automatically synced.",
+    "Website URL importing is best effort and depends on page format, public accessibility, and whether the schedule text is visible in the HTML.",
+    "PDF/image upload is currently an OCR placeholder and needs a later OCR or AI extraction API.",
+    "Saved plans are browser-local only.",
+    "Calendar export is not implemented yet."
+  ]
+}
