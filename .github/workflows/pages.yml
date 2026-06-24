@@ -23,23 +23,29 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
+
+      - name: Set up Node
+        uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+          cache: "pnpm"
+
+      - name: Install frontend dependencies
+        run: |
+          corepack enable
+          pnpm install --frozen-lockfile
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
       - name: Prepare static preview
-        run: |
-          mkdir -p _site/assets
-          mkdir -p _site/data
-          cp index.html styles.css app.js _site/
-          cp assets/demo-screenshot.jpg _site/assets/
-          cp data/role_framework_seed.json _site/data/
+        run: make pages-preview-check
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: _site
+          path: dist/pages-preview
 
       - name: Deploy to GitHub Pages
         id: deployment

@@ -1,9 +1,9 @@
-PYTHON ?= /Users/keithgohjuankai/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3
+PYTHON ?= python3
 PORT ?= 8000
 BASE_URL ?= http://127.0.0.1:$(PORT)
-NODE_BIN ?= /Users/keithgohjuankai/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin
-PNPM ?= /Users/keithgohjuankai/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/pnpm
-PATH_WITH_NODE := $(NODE_BIN):$(PATH)
+NODE_BIN ?=
+PNPM ?= pnpm
+PATH_WITH_NODE := $(if $(NODE_BIN),$(NODE_BIN):$(PATH),$(PATH))
 PYCACHE ?= ./.pycache
 
 .PHONY: run dev build smoke check package package-list pages-preview-check repo-preflight selftest-package final-preflight
