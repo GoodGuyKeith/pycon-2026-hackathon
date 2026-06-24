@@ -27,6 +27,6 @@ Event Buddy fits Track 2 Open Track: it is playful, useful, community-facing, an
 ## External Actions Still Required
 
 1. Publish a public GitHub repository.
-2. Verify the GitHub Pages static preview.
+2. Verify the static preview workflow, and only use a Pages URL if Pages has been enabled successfully.
 3. Complete the official Google form.
 4. Submit before the hackathon deadline.

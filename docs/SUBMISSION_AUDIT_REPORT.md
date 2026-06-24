@@ -20,7 +20,7 @@
 ## Remaining User-Only Actions
 
 1. Publish the public repository.
-2. Confirm the GitHub Pages static preview after workflow completion.
+2. Confirm the static preview workflow completes; if GitHub Pages is enabled later, confirm the Pages URL too.
 3. Fill the official Google submission form.
 4. Attach or link `dist/event-buddy-submission.zip` if the form accepts uploads.
 

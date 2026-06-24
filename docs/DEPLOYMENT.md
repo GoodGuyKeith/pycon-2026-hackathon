@@ -48,7 +48,7 @@ Open the Vite URL printed by `make dev`. Vite proxies `/api` to `http://127.0.0.
 
 Run `make pages-preview-check` to build the Vite app and copy a static preview bundle to `dist/pages-preview`.
 
-If the repository is published on GitHub, `.github/workflows/pages.yml` can deploy a static preview from the `main` branch. In the repository settings, configure Pages to use **GitHub Actions** as the source, then check the Actions tab after pushing.
+If the repository is published on GitHub, `.github/workflows/pages.yml` validates the same static preview bundle on every push to `main`. If you later enable GitHub Pages, use `dist/pages-preview` as the build output pattern for the deploy step.
 
 To check the static preview bundle locally:
 

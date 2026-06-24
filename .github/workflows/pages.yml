@@ -8,18 +8,13 @@ on:
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
 
 concurrency:
-  group: pages
+  group: static-preview
   cancel-in-progress: true
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -35,17 +30,5 @@ jobs:
           corepack enable
           pnpm install --frozen-lockfile
 
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
       - name: Prepare static preview
         run: make pages-preview-check
-
-      - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: dist/pages-preview
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4

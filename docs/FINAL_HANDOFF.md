@@ -19,7 +19,7 @@ Event Buddy is a working local web app with:
 - Venue transfer guidance
 - Smoke test
 - GitHub Actions workflow for public `make check`
-- GitHub Pages workflow for static preview
+- GitHub Actions workflow for static preview validation
 - Submission draft, judging checklist, and demo script
 
 ## Files To Know
