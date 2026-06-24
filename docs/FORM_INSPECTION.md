@@ -26,12 +26,12 @@ The local project already has most content needed for the form:
 
 - `README.md`
 - `PROJECT_MANIFEST.json`
-- `SUBMISSION_FORM_DRAFT.md`
-- `JUDGING_CHECKLIST.md`
-- `DEMO_SCRIPT.md`
-- `PITCH_DECK.md`
-- `FINAL_HANDOFF.md`
-- `assets/demo-screenshot.jpg`
+- `docs/SUBMISSION_FORM_DRAFT.md`
+- `docs/JUDGING_CHECKLIST.md`
+- `docs/DEMO_SCRIPT.md`
+- `docs/PITCH_DECK.md`
+- `docs/FINAL_HANDOFF.md`
+- ``
 - `dist/event-buddy-submission.zip`
 
 ## Remaining External Actions
@@ -39,7 +39,7 @@ The local project already has most content needed for the form:
 1. Sign in to Google.
 2. Put the project in a public repo or otherwise create a public project link.
 3. Confirm the public repo contains the same information as the local docs.
-4. Fill the official form using `SUBMISSION_FORM_DRAFT.md`.
+4. Fill the official form using `docs/SUBMISSION_FORM_DRAFT.md`.
 5. Submit before **24 Jun 2026, 6 pm SGT**.
 
 Do not submit from automation unless the user explicitly confirms the final action.

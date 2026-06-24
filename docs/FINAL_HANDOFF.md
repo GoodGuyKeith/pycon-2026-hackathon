@@ -25,25 +25,25 @@ Event Buddy is a working local web app with:
 ## Files To Know
 
 - `README.md`: main project overview and run instructions
-- `JUDGE_PACKET.md`: shortest judge-facing review path through the submission
+- `docs/JUDGE_PACKET.md`: shortest judge-facing review path through the submission
 - `LICENSE`: MIT license for public repo clarity
-- `DEMO_SCRIPT.md`: two-minute live demo script
-- `SUBMISSION_FORM_DRAFT.md`: copy-ready form answers
-- `JUDGING_CHECKLIST.md`: criteria evidence and final audit
-- `SUBMISSION_AUDIT_REPORT.md`: final criteria-to-evidence audit and remaining user-only actions
-- `SUBMISSION_READINESS.md`: repo-ready evidence, external actions, and honest limitations
-- `HACKATHON_SUBMISSION.md`: track fit and honest limitations
-- `PITCH_DECK.md`: slide-by-slide pitch outline
+- `docs/DEMO_SCRIPT.md`: two-minute live demo script
+- `docs/SUBMISSION_FORM_DRAFT.md`: copy-ready form answers
+- `docs/JUDGING_CHECKLIST.md`: criteria evidence and final audit
+- `docs/SUBMISSION_AUDIT_REPORT.md`: final criteria-to-evidence audit and remaining user-only actions
+- `docs/SUBMISSION_READINESS.md`: repo-ready evidence, external actions, and honest limitations
+- `docs/HACKATHON_SUBMISSION.md`: track fit and honest limitations
+- `docs/PITCH_DECK.md`: slide-by-slide pitch outline
 - `PROJECT_MANIFEST.json`: machine-readable submission metadata and criteria evidence
-- `SUBMISSION_LINKS_TEMPLATE.md`: fill-in template for final repo, static preview, zip, and form confirmation links
-- `FORM_INSPECTION.md`: read-only notes from the official Google submission form
-- `PUBLIC_REPO_CHECKLIST.md`: what to publish and what not to commit
-- `GITHUB_PUBLISH_GUIDE.md`: recommended GitHub settings, Git commands, and final public-link sanity check
-- `DEPLOYMENT.md`: Python-server, static preview, and Docker run modes
-- `AI_USE_AND_ETHICS.md`: AI-use disclosure, data/privacy notes, and limitations
-- `AI_READY_ASEAN.md`: mapping to the form's visible AI concepts and ethical AI tool-use expectations
-- `SOURCES.md`: dataset provenance and app resource links
-- `assets/demo-screenshot.jpg`: ready-to-use submission thumbnail
+- `docs/SUBMISSION_LINKS_TEMPLATE.md`: fill-in template for final repo, static preview, zip, and form confirmation links
+- `docs/FORM_INSPECTION.md`: read-only notes from the official Google submission form
+- `docs/PUBLIC_REPO_CHECKLIST.md`: what to publish and what not to commit
+- `docs/GITHUB_PUBLISH_GUIDE.md`: recommended GitHub settings, Git commands, and final public-link sanity check
+- `docs/DEPLOYMENT.md`: Python-server, static preview, and Docker run modes
+- `docs/AI_USE_AND_ETHICS.md`: AI-use disclosure, data/privacy notes, and limitations
+- `docs/AI_READY_ASEAN.md`: mapping to the form's visible AI concepts and ethical AI tool-use expectations
+- `docs/SOURCES.md`: dataset provenance and app resource links
+- ``: ready-to-use submission thumbnail
 - `assets/event-buddy-demo-current.png`: fresh full-page product screenshot
 - `assets/event-buddy-demo.mp4`: short demo slideshow from current UI states
 - `src/App.jsx`: React app, schedule logic, importers, and planner UI
@@ -90,11 +90,11 @@ http://127.0.0.1:8000/index.html
 2. Decide whether to submit as Open Track only or mention event-organizer/community relevance in the description.
 3. Sign in to Google; the official form requires sign-in before filling.
 4. Put the project in a public repo or create another public project link.
-5. Fill the official submission form using `SUBMISSION_FORM_DRAFT.md`.
+5. Fill the official submission form using `docs/SUBMISSION_FORM_DRAFT.md`.
 6. Attach or link the project repository/folder according to the form requirements.
    - If the form accepts file uploads, use `dist/event-buddy-submission.zip`.
 7. Submit before the official deadline: **24 Jun 2026, 6 pm SGT**.
-8. Run through `DEMO_SCRIPT.md` once before live judging.
+8. Run through `docs/DEMO_SCRIPT.md` once before live judging.
 
 ## Recommended Positioning
 

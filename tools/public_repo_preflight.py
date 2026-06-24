@@ -7,27 +7,26 @@ ROOT = Path(__file__).resolve().parents[1]
 
 REQUIRED_PUBLIC_FILES = [
   "README.md",
-  "JUDGE_PACKET.md",
+  "docs/JUDGE_PACKET.md",
   "LICENSE",
   ".github/workflows/check.yml",
   ".github/workflows/pages.yml",
   "PROJECT_MANIFEST.json",
-  "HACKATHON_SUBMISSION.md",
-  "SUBMISSION_FORM_DRAFT.md",
-  "JUDGING_CHECKLIST.md",
-  "SUBMISSION_AUDIT_REPORT.md",
-  "SUBMISSION_READINESS.md",
-  "DEMO_SCRIPT.md",
-  "PITCH_DECK.md",
-  "FINAL_HANDOFF.md",
-  "FORM_INSPECTION.md",
-  "PUBLIC_REPO_CHECKLIST.md",
-  "GITHUB_PUBLISH_GUIDE.md",
-  "DEPLOYMENT.md",
-  "AI_USE_AND_ETHICS.md",
-  "AI_READY_ASEAN.md",
-  "SOURCES.md",
-  "assets/demo-screenshot.jpg",
+  "docs/HACKATHON_SUBMISSION.md",
+  "docs/SUBMISSION_FORM_DRAFT.md",
+  "docs/JUDGING_CHECKLIST.md",
+  "docs/SUBMISSION_AUDIT_REPORT.md",
+  "docs/SUBMISSION_READINESS.md",
+  "docs/DEMO_SCRIPT.md",
+  "docs/PITCH_DECK.md",
+  "docs/FINAL_HANDOFF.md",
+  "docs/FORM_INSPECTION.md",
+  "docs/PUBLIC_REPO_CHECKLIST.md",
+  "docs/GITHUB_PUBLISH_GUIDE.md",
+  "docs/DEPLOYMENT.md",
+  "docs/AI_USE_AND_ETHICS.md",
+  "docs/AI_READY_ASEAN.md",
+  "docs/SOURCES.md",
   "assets/event-buddy-demo-current.png",
   "assets/event-buddy-demo.mp4",
   "tools/build_static_preview.py"
@@ -88,7 +87,7 @@ def audit_gitignore():
 def audit_tracked_files_if_git():
   if not inside_git_repo():
     print("Git status: not initialized yet")
-    print("Next step: create an empty public GitHub repo, then follow GITHUB_PUBLISH_GUIDE.md")
+    print("Next step: create an empty public GitHub repo, then follow docs/GITHUB_PUBLISH_GUIDE.md")
     return
 
   result = run_git(["ls-files"])

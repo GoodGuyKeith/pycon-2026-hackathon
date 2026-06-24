@@ -99,14 +99,12 @@ async function main() {
   });
   await page.reload({ waitUntil: "networkidle" });
   await page.screenshot({ path: join(assetsDir, "event-buddy-demo-current.png"), fullPage: true });
-  await page.screenshot({ path: join(assetsDir, "event-buddy-demo-01-hero.png"), fullPage: false });
   await setCaption(page, "1 / What it is", "Event Buddy turns a messy event agenda into a practical day plan, social prompts, and reward-ready proof.");
   await captureFrame(page, "hero", 2.7);
 
   await page.waitForTimeout(600);
   await page.mouse.wheel(0, 760);
   await page.waitForTimeout(500);
-  await page.screenshot({ path: join(assetsDir, "event-buddy-demo-02-import.png"), fullPage: false });
   await setCaption(page, "2 / Bring the agenda", "Import from paste, URL, CSV, calendar, upload, or manual quick-add, then tune goals, energy, social mode, and venue drift.");
   await captureFrame(page, "import", 2.9);
 
@@ -126,7 +124,6 @@ async function main() {
   await page.locator('input[placeholder="e.g. KAI42"]').fill("DEV42");
   await clickButton(page, "Connect");
   await page.waitForTimeout(700);
-  await page.screenshot({ path: join(assetsDir, "event-buddy-demo-03-buddy.png"), fullPage: false });
   await setCaption(page, "5 / Buddy connections", "Attendees exchange short buddy codes for low-friction networking, while the app suggests openers and polite exits.");
   await captureFrame(page, "buddy", 2.8);
 
@@ -147,13 +144,11 @@ async function main() {
     await page.evaluate(() => window.scrollBy(0, 120));
     await page.waitForTimeout(700);
   }
-  await page.screenshot({ path: join(assetsDir, "event-buddy-demo-04-rewards.png"), fullPage: false });
   await setCaption(page, "8 / Proof trail", "The request ID gives sponsors a claim to validate against room-code and buddy-code evidence, without exposing real voucher codes.");
   await captureFrame(page, "claim", 2.9);
 
   await clickTab(page, "Venue");
   await page.waitForTimeout(600);
-  await page.screenshot({ path: join(assetsDir, "event-buddy-demo-05-venue.png"), fullPage: false });
   await setCaption(page, "9 / Venue rhythm", "The Venue tab turns the plan into movement guidance, tight-transfer warnings, and a practical home-base suggestion.");
   await captureFrame(page, "venue", 2.7);
 

@@ -13,7 +13,7 @@ Event Buddy fits Track 2 Open Track: it is playful, useful, community-facing, an
 | Verification | `make check`, `make smoke`, `make pages-preview-check` |
 | Package | `dist/event-buddy-submission.zip` from `make package` |
 | Final audit | `make final-preflight` |
-| Judge path | `JUDGE_PACKET.md`, `DEMO_SCRIPT.md`, `PITCH_DECK.md` |
+| Judge path | `docs/JUDGE_PACKET.md`, `docs/DEMO_SCRIPT.md`, `docs/PITCH_DECK.md` |
 
 ## Demo Proof Points
 

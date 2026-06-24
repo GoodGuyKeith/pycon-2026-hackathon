@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "dist" / "pages-preview"
 
 STATIC_FILES = [
-  "assets/demo-screenshot.jpg"
+  "assets/event-buddy-demo-current.png"
 ]
 
 
@@ -45,7 +45,7 @@ def main():
 
   index = (OUT / "index.html").read_text(encoding="utf-8")
   assert_true("/assets/" in index, "static preview index should reference Vite assets")
-  assert_true((OUT / "assets" / "demo-screenshot.jpg").exists(), "static preview should include screenshot asset")
+  assert_true((OUT / "assets" / "event-buddy-demo-current.png").exists(), "static preview should include screenshot asset")
 
   print(f"Static preview built at {OUT.relative_to(ROOT)}")
   print(f"Included {len(STATIC_FILES)} files")

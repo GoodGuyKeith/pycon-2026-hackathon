@@ -9,7 +9,7 @@
 - Get a humane fieldwork plan.
 - Verify sessions and connections.
 
-Visual: `assets/demo-screenshot.jpg`
+Visual: ``
 
 ## Slide 2: Problem
 

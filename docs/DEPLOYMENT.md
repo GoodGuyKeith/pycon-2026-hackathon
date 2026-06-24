@@ -81,7 +81,7 @@ Use the public repo as the source of truth for:
 - screenshot
 - clean submission zip
 
-Use `PUBLIC_REPO_CHECKLIST.md` before publishing so generated local files are not committed.
+Use `docs/PUBLIC_REPO_CHECKLIST.md` before publishing so generated local files are not committed.
 
 ## Container Option
 

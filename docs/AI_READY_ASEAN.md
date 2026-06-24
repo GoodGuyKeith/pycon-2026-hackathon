@@ -8,9 +8,9 @@ This project does not claim certificate approval. This file maps the current pro
 
 Evidence:
 
-- `AI_USE_AND_ETHICS.md` explains how Codex was used and what the runtime app does not do.
+- `docs/AI_USE_AND_ETHICS.md` explains how Codex was used and what the runtime app does not do.
 - `PROJECT_MANIFEST.json` separates current deterministic planning logic from future AI extraction plans.
-- `JUDGING_CHECKLIST.md` states that planning is heuristic and explainable, not a trained model.
+- `docs/JUDGING_CHECKLIST.md` states that planning is heuristic and explainable, not a trained model.
 
 ## Application Of AI Skills
 
@@ -27,7 +27,7 @@ Evidence:
 - `make check` verifies code/data/package readiness.
 - `smoke_test.py` validates live backend endpoints.
 - `tools/audit_submission.py` prevents missing required submission artifacts.
-- `FORM_INSPECTION.md` records read-only form inspection without submitting or transmitting data.
+- `docs/FORM_INSPECTION.md` records read-only form inspection without submitting or transmitting data.
 
 ## Ethical AI Tool Use
 
